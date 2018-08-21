@@ -5,7 +5,7 @@ const Header = ({ showAll, toggleShowAll }) => {
   return (
     <div id="header">
       <h1>Acme Users and Things - React</h1>
-      <div id="toggleBanner" onClick={toggleShowAll}>{toggleText}</div>
+      <button type="button" id="toggleBanner" onClick={toggleShowAll}>{toggleText}</button>
     </div>
   )
 }
