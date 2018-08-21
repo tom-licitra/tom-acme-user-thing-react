@@ -3,7 +3,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#toggleBanner {
+#toggleButton {
   background-color: black;
   color: white;
   text-align: center;
@@ -12,6 +12,10 @@
   padding: 5px;
   cursor: pointer;
   font-size: 1.25em;
+}
+
+#toggleButton:focus {
+  outline: 0;
 }
 
 #UserList {
