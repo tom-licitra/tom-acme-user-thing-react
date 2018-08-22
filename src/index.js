@@ -19,12 +19,17 @@ class Main extends Component {
 
   async componentDidMount () {
     const _users = await axios.get('/users');
+    // window.addEventListener('hashchange', () => {
+    //   this.setState({
+    //     showAll: window.location.hash !== '#filtered'
+    // })})
     this.setState({
       users: _users.data
     })
   }
 
   toggleShowAll () {
+    // window.location.hash = this.state.showAll ? 'filtered' : '';
     let toggled = !(this.state.showAll);
     this.setState({
       showAll: (toggled)
